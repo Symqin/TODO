@@ -1,16 +1,89 @@
-# todo
+TODO APP (Flutter)
 
-A new Flutter project.
+A simple and clean Todo List application built with Flutter.
+This app allows users to create, complete, and delete tasks,
+with local persistence using Hive.
 
-## Getting Started
+================================
+FEATURES
+================================
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks (swipe to delete)
+- Local storage using Hive
+- Dark theme UI
+- Android APK ready to install
 
-This project is a starting point for a Flutter application.
+================================
+TECH STACK
+================================
+- Flutter
+- Dart
+- Hive (Local NoSQL Database)
+- flutter_slidable
 
-A few resources to get you started if this is your first Flutter project:
+================================
+PROJECT STRUCTURE
+================================
+lib/
+├── data/
+│   └── database.dart
+├── pages/
+│   └── home_page.dart
+├── utils/
+│   ├── dialog_box.dart
+│   ├── my_button.dart
+│   └── todo_tile.dart
+├── main.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+================================
+GETTING STARTED
+================================
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Install dependencies
+flutter pub get
+
+2. Run the app (debug)
+flutter run
+
+================================
+BUILD APK (RELEASE)
+================================
+
+flutter build apk --release
+
+APK output:
+build/app/outputs/flutter-apk/app-release.apk
+
+Optional rename:
+mv app-release.apk release.apk
+
+================================
+LOCAL STORAGE (HIVE)
+================================
+
+- Hive box name: mybox
+- Data key: TODOLIST
+- Data persists after app restart
+
+================================
+APP ICON
+================================
+
+Generated using flutter_launcher_icons
+
+Command:
+flutter pub run flutter_launcher_icons
+
+================================
+NOTES
+================================
+- For learning and demo purposes
+- Enable "Install unknown apps" to install APK
+- Not published on Play Store
+
+================================
+AUTHOR
+================================
+Created by Qin
+Built with Flutter
