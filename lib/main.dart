@@ -19,8 +19,6 @@ class MyApp extends StatelessWidget {
           backgroundColor: Color(0xFF1E1E2E),
           titleTextStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-
-        primarySwatch: Colors.grey,
       ),
 
       home: const HomePage(),
