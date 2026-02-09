@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
 import 'package:todo/data/database.dart';
 import 'package:todo/utils/dialog_box.dart';
-
 import '../utils/todo_tile.dart';
 
 class HomePage extends StatefulWidget {
@@ -79,6 +77,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Color(0xFF1E1E2E),
       appBar: AppBar(
+        elevation: 0,
+        scrolledUnderElevation: 0,
         title: Text(
           "TODO",
           style: TextStyle(
